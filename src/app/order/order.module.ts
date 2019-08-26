@@ -1,17 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { OrderListComponent } from './order-list/order-list.component';
 
+import { OrderRoutingModule } from './order-routing.module';
+import { OrderListComponent } from './order-list/order-list.component';
 
 
 @NgModule({
   declarations: [OrderListComponent],
   imports: [
-    CommonModule
+    CommonModule,
+    OrderRoutingModule
   ]
 })
 export class OrderModule {
-  constructor() {
-    console.log('Order Module loaded.');
+  constructor(){
+    console.log("Order NModule");
+    
   }
  }
